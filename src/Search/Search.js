@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { search } from "fast-fuzzy";
+import "./search.css";
+import ListElement from "./ListElement/Listelement";
 
 export default function Search({ fetchedItems }) {
   const [input, setInput] = useState([]);
@@ -17,10 +19,11 @@ export default function Search({ fetchedItems }) {
 
   return (
     <>
-      <form>
-        <label htmlFor="search">
-          Einkausfliste:
+      <form class="form">
+        <label class="form__label" htmlFor="search">
+          Was willst du einkaufen?
           <input
+            class="form__input"
             id="search"
             type="search"
             autofocus
@@ -28,9 +31,9 @@ export default function Search({ fetchedItems }) {
             value={input}
           ></input>
         </label>
-        <ul>
+        <ul class="form__ul">
           {results?.map((item) => (
-            <li key={item["_id"]}>{item.name.de}</li>
+            <ListElement key={item["_id"]}>{item.name.de}</ListElement>
           ))}
         </ul>
       </form>

@@ -1,6 +1,6 @@
 import "./App.css";
 
-import Search from "./Search";
+import Search from "./Search/Search";
 import { useEffect, useState } from "react";
 
 function App() {
