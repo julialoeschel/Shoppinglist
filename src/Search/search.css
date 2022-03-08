@@ -20,6 +20,6 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1em;
+  gap: 0.5em;
   flex-wrap: wrap;
 }
