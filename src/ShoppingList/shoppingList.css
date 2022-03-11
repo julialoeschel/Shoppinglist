@@ -5,3 +5,16 @@
   flex-wrap: wrap;
   gap: 10px;
 }
+
+h3 {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  min-height: 260px;
+}
+
+.list {
+  margin-left: 20px;
+}

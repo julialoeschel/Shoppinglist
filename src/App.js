@@ -17,7 +17,7 @@ function App() {
     setShoppingList(filteredList);
   }
 
-  // console.log(shoppingList);
+  console.log(shoppingList);
 
   return (
     <>
