@@ -1,0 +1,7 @@
+.shoppingItemsContainer {
+  padding-bottom: 20px;
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

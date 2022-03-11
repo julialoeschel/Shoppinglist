@@ -1,0 +1,6 @@
+.listitem {
+  background-color: rgb(194, 238, 223);
+  display: inline;
+  padding: 0.5em 1em;
+  border-radius: 0.6em;
+}

@@ -1,0 +1,24 @@
+.form {
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form__input {
+  margin: 1em 0;
+}
+
+.form__ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
