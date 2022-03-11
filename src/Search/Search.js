@@ -23,6 +23,8 @@ export default function Search({
 
   function onTab(item) {
     setShoppingList([...shoppingList, item]);
+    setInput("");
+    setResults([]);
   }
 
   return (
@@ -39,7 +41,7 @@ export default function Search({
             value={input}
           ></input>
         </label>
-        <ul class="form__ul">
+        <ul className="form__ul">
           {results?.map((item) => (
             <ListElement item={item} onTab={onTab}></ListElement>
           ))}

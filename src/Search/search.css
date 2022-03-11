@@ -2,6 +2,7 @@
   width: 20em;
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 .form__label {
@@ -21,4 +22,6 @@
   display: flex;
   gap: 0.5em;
   flex-wrap: wrap;
+  height: 200px;
+  overflow: auto;
 }
