@@ -8,6 +8,7 @@ export default function ShoppingList({ List, onDelete }) {
       <div class="shoppingItemsContainer">
         {List.map((item) => (
           <ListElement
+            key={item._id}
             item={item}
             onTab={() => onDelete(item._id)}
           ></ListElement>
