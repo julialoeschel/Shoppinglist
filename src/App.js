@@ -12,11 +12,16 @@ function App() {
     fetchData();
   }, []);
 
-  console.log(shoppingList);
+  function onDelete(item) {
+    const filteredList = shoppingList.filter((element) => element._id !== item);
+    setShoppingList(filteredList);
+  }
+
+  // console.log(shoppingList);
 
   return (
     <>
-      <ShoppingList></ShoppingList>
+      <ShoppingList List={shoppingList} onDelete={onDelete}></ShoppingList>
       <Search
         fetchedItems={data}
         shoppingList={shoppingList}
