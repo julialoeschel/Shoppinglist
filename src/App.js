@@ -15,6 +15,7 @@ function App() {
 
   return (
     <>
+      <ShoppingList></ShoppingList>
       <Search
         fetchedItems={data}
         shoppingList={shoppingList}

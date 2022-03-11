@@ -2,17 +2,13 @@ import "./listElement.css";
 
 export default function ListElement({ onTab, item }) {
   return (
-    <li class="listitem">
+    <li
+      class="listitem"
+      onClick={() => {
+        onTab(item);
+      }}
+    >
       {item.name.de}
-      <button
-        onClick={(event) => {
-          event.preventDefault();
-          onTab(item);
-        }}
-      >
-        {" "}
-        x{" "}
-      </button>
     </li>
   );
 }
