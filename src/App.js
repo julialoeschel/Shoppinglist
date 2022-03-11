@@ -5,14 +5,21 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [data, setData] = useState(["one", "two"]);
+  const [shoppingList, setShoppingList] = useState([]);
 
   useEffect(() => {
     fetchData();
   }, []);
-  console.log(data);
+
+  console.log(shoppingList);
+
   return (
     <>
-      <Search fetchedItems={data}></Search>
+      <Search
+        fetchedItems={data}
+        shoppingList={shoppingList}
+        setShoppingList={setShoppingList}
+      ></Search>
     </>
   );
 
