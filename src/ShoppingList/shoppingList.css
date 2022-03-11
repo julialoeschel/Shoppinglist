@@ -1,6 +1,5 @@
 .shoppingItemsContainer {
   padding-bottom: 20px;
-  background-color: rgb(255, 255, 52);
   width: 350px;
   display: flex;
   flex-wrap: wrap;
