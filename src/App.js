@@ -1,6 +1,7 @@
 import "./App.css";
 
 import Search from "./Search/Search";
+import ShoppingList from "./ShoppingList/ShoppingList";
 import { useEffect, useState } from "react";
 
 function App() {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { search } from "fast-fuzzy";
 import "./search.css";
-import ListElement from "./ListElement/Listelement";
+import ListElement from "../ListElement/Listelement";
 
 export default function Search({
   fetchedItems,
